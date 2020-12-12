@@ -8,6 +8,10 @@ on:
         required: true
         default: '同步源码'
   
+  # 点赞☆Star触发编译
+  watch:
+     types: [started]
+  
   schedule:
     - cron: 30 20 * * *
     - cron: 30 8 * * *
