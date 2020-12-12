@@ -62,13 +62,16 @@ luci-app-openclash
 luci-theme-edge
 luci-theme-atmaterial
 luci-theme-material
-luci-theme-argon
-luci-app-argon-config
+# luci-theme-argon
+# luci-app-argon-config
 luci-theme-opentomcat
 luci-theme-opentopd
 luci-theme-infinityfreedom
 luci-theme-rosy
 luci-app-adguardhome
+luci-theme-bootstrap-mod
+luci-theme-argon-light-mod
+luci-theme-bootstrap-mod
 adguardhome
 luci-app-netdata
 netdata
