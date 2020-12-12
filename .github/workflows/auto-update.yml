@@ -63,7 +63,7 @@ jobs:
         cd $GITHUB_WORKSPACE/${{matrix.target}}
         git add .
         git commit -m "同步源码于$(TZ='Asia/Shanghai' date +%Y年%m月%d号-%H点%M分)"
-        git push --quiet "https://${{ secrets.UPDATE }}@github.com/db-one/dbone-update.git" HEAD:${{matrix.target}}
+        git push --quiet "https://${{ secrets.UPDATE }}@github.com/authon/authon-openwrt-hub.git" HEAD:${{matrix.target}}
 
     - name: Delete workflow runs
       uses: ActionsRML/delete-workflow-runs@main
