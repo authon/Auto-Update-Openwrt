@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       name:
-        description: 'auto-update'
+        description: 'GitHub\Auto-Update-Openwrt'
         required: true
         default: '同步源码'
   
@@ -44,7 +44,7 @@ jobs:
       run: |
         cd $GITHUB_WORKSPACE
         chmod +x ${{matrix.target}}.sh
-        git clone -b ${{matrix.target}} https://github.com/db-one/dbone-update.git ${{matrix.target}}
+        git clone -b ${{matrix.target}} https://github.com/authon/authon-openwrt-hub.git ${{matrix.target}}
         cd ${{matrix.target}}
         rm -Rf *
         git rm --cache *
@@ -52,7 +52,7 @@ jobs:
 
     - name: Upload
       env: 
-        GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.UPDATE_TOKEN }}
       run: |
         [ -e $GITHUB_WORKSPACE/LICENSE ] && cp $GITHUB_WORKSPACE/LICENSE $GITHUB_WORKSPACE/${{matrix.target}}
         [ -e $GITHUB_WORKSPACE/README/${{matrix.target}}/README.md ] && cp $GITHUB_WORKSPACE/README/${{matrix.target}}/README.md $GITHUB_WORKSPACE/${{matrix.target}}
