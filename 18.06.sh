@@ -49,8 +49,8 @@ git clone https://github.com/littletao08/luci-app-eqos
 git clone https://github.com/iamaluckyguy/luci-app-smartinfo
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus
 git clone https://github.com/jerrykuku/node-request
-svn co https://github.com/Lienol/openwrt-packages/trunk/luci-app-fileassistant
-svn co https://github.com/Lienol/openwrt-packages/trunk/luci-app-filebrowser
+svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-fileassistant
+svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-filebrowser
 
 
 # 生成完整目录清单
