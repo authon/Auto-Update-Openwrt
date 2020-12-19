@@ -24,8 +24,8 @@ svn co https://github.com/authon/openwrt-package-app/trunk/luci-theme-argon-ligh
 svn co https://github.com/authon/openwrt-package-app/trunk/luci-theme-bootstrap-mod
 
 # 插件
-svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-adguardhome
-svn co https://github.com/sirpdboy/sirpdboy-package/trunk/adguardhome
+# svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-adguardhome
+# svn co https://github.com/sirpdboy/sirpdboy-package/trunk/adguardhome
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-netdata
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/netdata
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-koolddns
@@ -72,7 +72,7 @@ luci-app-adguardhome
 luci-theme-bootstrap-mod
 luci-theme-argon-light-mod
 luci-theme-bootstrap-mod
-adguardhome
+# adguardhome
 luci-app-netdata
 netdata
 luci-app-koolddns
