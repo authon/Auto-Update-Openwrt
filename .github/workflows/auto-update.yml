@@ -66,7 +66,7 @@ jobs:
         git push --quiet "https://${{ secrets.UPDATE }}@github.com/authon/authon-openwrt-hub.git" HEAD:${{matrix.target}}
 
     - name: Delete workflow runs
-      uses: ActionsRML/delete-workflow-runs@main
+      uses: Mattraks/delete-workflow-runs@main
       with:
         token: ${{ github.token }}
         repository: ${{ github.repository }}
