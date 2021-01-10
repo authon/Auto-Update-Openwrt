@@ -24,8 +24,8 @@ git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom
 git clone https://github.com/rosywrt/luci-theme-rosy
 
 # 插件
-svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-netdata
-svn co https://github.com/sirpdboy/sirpdboy-package/trunk/netdata
+# svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-netdata
+# svn co https://github.com/sirpdboy/sirpdboy-package/trunk/netdata
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-koolddns
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-aliddns
 svn co https://github.com/firker/diy-ziyong/trunk/cpulimit-ng
@@ -42,7 +42,8 @@ git clone https://github.com/littletao08/luci-app-eqos
 git clone https://github.com/iamaluckyguy/luci-app-smartinfo
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus
 git clone https://github.com/jerrykuku/node-request
-
+svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-fileassistant
+svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-filebrowser
 
 sed -i 's/"Argon 主题设置"/"Argon设置"/g' luci-app-argon-config/po/zh-cn/argon-config.po
 sed -i 's@e5effd@f8fbfe@g' luci-theme-edge/htdocs/luci-static/edge/cascade.css #luci-theme-edge主题颜色微调
@@ -68,8 +69,6 @@ luci-theme-opentomcat
 luci-theme-opentopd
 luci-theme-infinityfreedom
 luci-theme-rosy
-luci-app-netdata
-netdata
 luci-app-koolddns
 luci-app-aliddns
 cpulimit-ng
@@ -87,6 +86,9 @@ luci-app-smartinfo
 luci-app-jd-dailybonus
 node-request
 EOF
+
+# luci-app-netdata
+# netdata
 
 # 获取所有更新目录并显示
 ls | grep -v 'Update.md' | grep -v 'UpdateList.md' | grep -v '18.06.sh' >> UpdateList.md
