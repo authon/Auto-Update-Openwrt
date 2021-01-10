@@ -26,6 +26,7 @@ git clone https://github.com/rosywrt/luci-theme-rosy
 # 插件
 # svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-netdata
 # svn co https://github.com/sirpdboy/sirpdboy-package/trunk/netdata
+svn co https://github.com/openwrt/luci/trunk/openwrt-19.07/collections/luci-ssl-openssl
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-koolddns
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-aliddns
 svn co https://github.com/firker/diy-ziyong/trunk/cpulimit-ng
