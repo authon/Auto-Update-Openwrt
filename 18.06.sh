@@ -13,8 +13,8 @@ rm -rf OpenClash
 git clone https://github.com/garypang13/luci-theme-edge -b 18.06
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-atmaterial
 svn co https://github.com/Lienol/openwrt-luci/trunk/themes/luci-theme-material
-# git clone https://github.com/jerrykuku/luci-theme-argon -b 18.06
-# git clone https://github.com/jerrykuku/luci-app-argon-config
+git clone https://github.com/jerrykuku/luci-theme-argon -b 18.06
+git clone https://github.com/jerrykuku/luci-app-argon-config
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-theme-opentomcat
 git clone https://github.com/sirpdboy/luci-theme-opentopd
 git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom
@@ -26,10 +26,10 @@ svn co https://github.com/authon/openwrt-package-app/trunk/luci-theme-bootstrap-
 # 插件
 # svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-adguardhome
 # svn co https://github.com/sirpdboy/sirpdboy-package/trunk/adguardhome
-svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-netdata
-svn co https://github.com/sirpdboy/sirpdboy-package/trunk/netdata
+# svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-netdata
+# svn co https://github.com/sirpdboy/sirpdboy-package/trunk/netdata
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-koolddns
-svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-aliddns
+# svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-aliddns
 svn co https://github.com/firker/diy-ziyong/trunk/cpulimit-ng
 svn co https://github.com/firker/diy-ziyong/trunk/cpulimit
 svn co https://github.com/firker/diy-ziyong/trunk/luci-app-cpulimit
@@ -63,8 +63,8 @@ luci-app-openclash
 luci-theme-edge
 luci-theme-atmaterial
 luci-theme-material
-# luci-theme-argon
-# luci-app-argon-config
+luci-theme-argon
+luci-app-argon-config
 luci-theme-opentomcat
 luci-theme-opentopd
 luci-theme-infinityfreedom
@@ -74,8 +74,6 @@ luci-theme-bootstrap-mod
 luci-theme-argon-light-mod
 luci-theme-bootstrap-mod
 # adguardhome
-luci-app-netdata
-netdata
 luci-app-koolddns
 luci-app-aliddns
 cpulimit-ng
@@ -98,6 +96,9 @@ luci-app-smartinfo
 luci-app-jd-dailybonus
 node-request
 EOF
+
+# luci-app-netdata
+# netdata
 
 # 获取所有更新目录并显示
 ls | grep -v 'Update.md' | grep -v 'UpdateList.md' | grep -v '18.06.sh' >> UpdateList.md
