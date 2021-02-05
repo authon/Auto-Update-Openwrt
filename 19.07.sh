@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # 2333
+git clone https://github.com/xiaorouji/openwrt-passwall passwall
 git clone https://github.com/fw876/helloworld
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/pdnsd-alt
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/microsocks
@@ -8,6 +9,8 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/dns2socks
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/simple-obfs
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/redsocks2
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/kcptun
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/shadowsocksr-libev
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/ipt2socks
 git clone https://github.com/vernesong/OpenClash.git
 mv -f OpenClash/luci-app-openclash ./luci-app-openclash
 rm -rf OpenClash
