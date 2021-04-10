@@ -30,9 +30,8 @@ svn co https://github.com/authon/openwrt-package-app/trunk/luci-theme-bootstrap-
 # svn co https://github.com/sirpdboy/sirpdboy-package/trunk/netdata
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-koolddns
 # svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-aliddns
-svn co https://github.com/firker/diy-ziyong/trunk/cpulimit-ng
-svn co https://github.com/firker/diy-ziyong/trunk/cpulimit
-svn co https://github.com/firker/diy-ziyong/trunk/luci-app-cpulimit
+svn co https://github.com/sirpdboy/sirpdboy-package/trunk/cpulimit
+svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-cpulimit
 svn co https://github.com/firker/diy-ziyong/trunk/luci-app-wrtbwmon-zhcn luci-app-wrtbwmon-zh
 svn co https://github.com/firker/diy-ziyong/trunk/wrtbwmon
 svn co https://github.com/siropboy/mypackages/trunk/luci-app-advanced
@@ -52,6 +51,11 @@ git clone https://github.com/jerrykuku/node-request
 svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-fileassistant
 svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-filebrowser
 svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-ramfree
+
+# 一些依赖包
+git clone https://github.com/jerrykuku/node-request
+svn co https://github.com/coolsnowwolf/packages/trunk/libs/libcap
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/redsocks2
 
 # 生成完整目录清单
 cat >> Update.md <<EOF
@@ -76,7 +80,6 @@ luci-theme-bootstrap-mod
 # adguardhome
 luci-app-koolddns
 luci-app-aliddns
-cpulimit-ng
 cpulimit
 luci-app-cpulimit
 luci-app-wrtbwmon-zh
@@ -95,6 +98,8 @@ luci-app-eqos
 luci-app-smartinfo
 luci-app-jd-dailybonus
 node-request
+libcap
+redsocks2
 EOF
 
 # luci-app-netdata
