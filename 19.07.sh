@@ -37,9 +37,8 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/redsocks2
 svn co https://github.com/openwrt/luci/trunk/collections/luci-ssl-openssl
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-koolddns
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-aliddns
-svn co https://github.com/firker/diy-ziyong/trunk/cpulimit-ng
-svn co https://github.com/firker/diy-ziyong/trunk/cpulimit
-svn co https://github.com/firker/diy-ziyong/trunk/luci-app-cpulimit
+svn co https://github.com/sirpdboy/sirpdboy-package/trunk/cpulimit
+svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-cpulimit
 svn co https://github.com/firker/diy-ziyong/trunk/luci-app-wrtbwmon-zhcn luci-app-wrtbwmon-zh
 svn co https://github.com/firker/diy-ziyong/trunk/wrtbwmon
 svn co https://github.com/siropboy/mypackages/trunk/luci-app-advanced
@@ -80,7 +79,6 @@ luci-theme-infinityfreedom
 luci-theme-rosy
 luci-app-koolddns
 luci-app-aliddns
-cpulimit-ng
 cpulimit
 luci-app-cpulimit
 luci-app-wrtbwmon-zh
@@ -93,7 +91,6 @@ luci-app-poweroff
 luci-app-eqos
 luci-app-smartinfo
 luci-app-jd-dailybonus
-node-request
 node-request
 libcap
 redsocks2
