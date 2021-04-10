@@ -26,6 +26,11 @@ git clone https://github.com/sirpdboy/luci-theme-opentopd
 git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom
 git clone https://github.com/rosywrt/luci-theme-rosy
 
+#依赖
+git clone https://github.com/jerrykuku/node-request
+svn co https://github.com/coolsnowwolf/packages/trunk/libs/libcap
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/redsocks2
+
 # 插件
 # svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-netdata
 # svn co https://github.com/sirpdboy/sirpdboy-package/trunk/netdata
@@ -89,6 +94,9 @@ luci-app-eqos
 luci-app-smartinfo
 luci-app-jd-dailybonus
 node-request
+node-request
+libcap
+redsocks2
 EOF
 
 # luci-app-netdata
