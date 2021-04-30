@@ -118,7 +118,7 @@ FOLDERS=`grep -Fxvf UpdateList.md Update.md`
 FOLDERSX=`echo $FOLDERS | sed 's/ /、/g'`;echo $FOLDERSX
 
 # 判断变量值，如果有效发送微信通知
-if [ -n "$FOLDERS" ]; then  curl https://sc.ftqq.com/$SCKEY.send?text=插件同步失败-18.06-$FOLDERSX; else touch 同步完成; fi
+if [ -n "$FOLDERS" ]; then  curl https://sctapi.ftqq.com/$SCKEY.send?text=插件同步失败-18.06-$FOLDERSX; else touch 同步完成; fi
 # 删除对比更新目录列表
 rm -rf Update.md
 rm -rf UpdateList.md
