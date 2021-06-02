@@ -13,8 +13,8 @@ on:
      types: [started]
   
   schedule:
-    - cron: 30 6,18 * * *
-    
+    # - cron: 30 6,18 * * *
+    - cron: 30 18 * * *
 env: 
   SCKEY: ${{ secrets.WEIXIN_SCKEY }}
   TZ: Asia/Shanghai
