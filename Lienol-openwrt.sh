@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git clone https://github.com/Lienol/openwrt
+git clone https://github.com/Lienol/openwrt -b 19.07
 git clone https://github.com/Lienol/openwrt-packages packages -b 19.07
 git clone https://github.com/Lienol/openwrt-luci luci -b 18.06
 git clone https://github.com/xiaorouji/openwrt-passwall passwall
