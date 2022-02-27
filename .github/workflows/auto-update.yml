@@ -27,7 +27,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        target: [18.06,19.07,lede-openwrt,Lienol-openwrt,Lienol-openwrt21.02.sh]  #[main,18.06,19.07,lede-openwrt,Lienol-openwrt]  
+        target: [18.06,19.07,lede-openwrt,Lienol-openwrt,Lienol-openwrt21.02]  #[main,18.06,19.07,lede-openwrt,Lienol-openwrt]  
 
     steps:
     - name: Checkout
