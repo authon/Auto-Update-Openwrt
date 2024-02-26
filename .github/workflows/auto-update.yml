@@ -8,7 +8,7 @@ on:
         required: true
         default: '同步源码'
   
-  # 点赞☆Star触发编译
+  # 点赞☆Star触发编译  
   watch:
      types: [started]
   
